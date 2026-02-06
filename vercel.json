@@ -1,4 +1,8 @@
 {
-  "rewrites": [{ "source": "/api/consulta/:codigo", "destination": "/api/consulta/:codigo" }]
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "http://177.221.240.85:8000/api/$1"
+    }
+  ]
 }
-
